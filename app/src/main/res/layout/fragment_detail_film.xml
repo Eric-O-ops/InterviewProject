@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.fragments.detail.DetailFilmFragment"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/original_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="original_title" />
+
+    <TextView
+        android:id="@+id/original_title_romanised"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="original_title_romanised" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="description" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="description" />
+
+    <TextView
+        android:id="@+id/producer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="producer" />
+
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="release_date" />
+
+    <TextView
+        android:id="@+id/running_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="running_time" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="rt_score" />
+
+    <ImageView
+        android:id="@+id/movie_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/original_title"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/image" />
+
+</LinearLayout>
