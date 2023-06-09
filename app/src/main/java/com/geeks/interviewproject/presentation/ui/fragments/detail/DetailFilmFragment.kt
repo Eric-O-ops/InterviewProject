@@ -3,6 +3,7 @@ package com.geeks.interviewproject.presentation.ui.fragments.detail
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
+import coil.load
 import com.geeks.interviewproject.R
 import com.geeks.interviewproject.databinding.FragmentDetailFilmBinding
 import com.geeks.interviewproject.presentation.base.BaseFragment
@@ -26,6 +27,8 @@ class DetailFilmFragment :
             releaseDate.text = film.release_date
             runningTime.text = film.running_time
             score.text = film.rt_score
+            image.load(film.image)
+            movieBanner.load(film.movie_banner)
         }
     }
 }
